@@ -16,6 +16,8 @@ function App() {
 
       {/* <h2>Welcome {JSON.stringify(user)}</h2> */}
 
+      
+
       <p>{isLoggedIn ? <h1>Dashboard</h1> : <button>Login</button>}</p>
     </>
   )
