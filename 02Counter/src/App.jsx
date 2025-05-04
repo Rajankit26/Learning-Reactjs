@@ -22,9 +22,13 @@ function App() {
     
   }
   const removeValue = () => {
-      setCount(count => count - 1)
-      setCount(count => count - 1)
-      setCount(count => count - 1)
+   if(count > 0){
+    setCount(count => count - 1)
+    setCount(count => count - 1)
+   }
+   else{
+    console.log('Negative counter value is not allowed')
+   }
   }
   return (
     <>
