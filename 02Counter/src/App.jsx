@@ -30,7 +30,7 @@ function App() {
     <>
       <button onClick={handleClick}>Add value : {count}</button>
       <br />
-      <button onClick={removeValue}>Remove Value : {count}</button>
+      <button onClick={removeValue} disabled = {count === 0}>Remove Value : {count}</button>
     </>
   )
 }
