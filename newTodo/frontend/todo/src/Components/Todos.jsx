@@ -11,9 +11,10 @@
 
 export function Todos({todos}){
 
+    const todosArray = Array.isArray(todos) ? todos : [];
     return <>
     {
-        todos.map( (todo) => {
+        todosArray.map( (todo) => {
             return <div key={todo._id}>
             <h1>{todo.title}</h1>
             <h4>{todo.description}</h4>
